@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="images/favicon.png">
+</head>
+<header>
+<meta charset="utf-8">
+<title> Contact </title> <!-- This determines this title of the page -->
+<nav>
+<ul>
+  <li><a href="index.html">Home</a></li> <!-- The active shows the user what page they are currently on by making the page tag red-->
+  <li><a href="basics.html">Basics</a></li> <!-- This shows what button is linked to which html page -->
+  <li><a href="advanced.html">Advanced</a></li>
+  <li><a href="mtgonline.html">MTG Online</a></li>
+  <li><a class="active" href="contact.html">Contact</a></li>
+  <img class="logo" src="images/flame.jpeg" alt="logo">
+</ul>
+</nav>
+</header>
+<body>
+<script> <!--This script will check to see how far the user has scrolled down the page and when it has reached a certain length the script will run and then display the button to take the user back to the top of the page -->
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("topBtn").style.display = "block";
+  } else {
+    document.getElementById("topBtn").style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<h1>Go and follow us on our social media's</h1>
+<a href="https://en-gb.facebook.com/MagicTheGathering/">
+  <img class="social" src="images/facebook.jpg" alt="F">
+</a>
+<a href="https://twitter.com/wizards_magic?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+  <img class="social" src="images/twitter.jpg" alt="twitter">
+</a>
+
+<a href="https://www.instagram.com/wizards_magic/?hl=en">
+  <img class="social" src="images/insta.jpg" alt="instagram" tag="instagram">
+</a>
+<div class="footer"> <!-- This is a button that redirects the user to a different website -->
+&copy;MTG Fire
+</div>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="images/favicon.png">
+</head>
+<header>
+<meta charset="utf-8">
+<title> Basics </title> <!-- This determines this title of the page -->
+<nav>
+<ul>
+  <li><a href="index.html">Home</a></li> <!-- The active shows the user what page they are currently on by making the page tag red-->
+  <li><a class="active" href="basics.html">Basics</a></li> <!-- This shows what button is linked to which html page -->
+  <li><a href="advanced.html">Advanced</a></li>
+  <li><a href="mtgonline.html">MTG Online</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <img class="logo" src="images/flame.jpeg" alt="logo">
+</ul>
+</nav>
+</header>
+<body>
+  <button onclick="topFunction()" id="topBtn" title="top">Top</button>
+<script> <!--This script will check to see how far the user has scrolled down the page and when it has reached a certain length the script will run and then display the button to take the user back to the top of the page -->
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("topBtn").style.display = "block";
+  } else {
+    document.getElementById("topBtn").style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<h1>Welcome to the beginning of your journey</h1>
+<p class="intro">
+Hello adventures this is where your journey to greatness begins. Before you
+can concour your enimies you must master the basics. Below are a series of
+different videos to help you get started.
+</p>
+<p class="intro">Here is a video showing the rules and the machanics of the game:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RZyXU1L3JXk"
+ frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p class="intro">This is explaining more depth about how the different colours and clans in the game work:</p> <!-- This is a button that redirects the user to a different website -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7ReIn6rU_fQ" </iframe>
+<p></P>
+<div class="footer"> <!-- the &copy will give the MTG fire a copyright symbol -->
+&copy;MTG Fire
+</div>
+</body>
+</html>

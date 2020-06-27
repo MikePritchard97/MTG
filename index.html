@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="images/favicon.png" />
+  </head>
+  <header>
+    <meta charset="utf-8" />
+    <title>Home</title>
+    <!-- This determines this title of the page -->
+    <nav>
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <!-- The active shows the user what page they are currently on by making the page tag red-->
+        <li><a href="basics.html">Basics</a></li>
+        <!-- This shows what button is linked to which html page -->
+        <li><a href="advanced.html">Advanced</a></li>
+        <li><a href="mtgonline.html">MTG Online</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <img class="logo" src="images/flame.jpeg" alt="logo" />
+      </ul>
+    </nav>
+  </header>
+  <body>
+    <button onclick="topFunction()" id="topBtn" title="top">Top</button>
+    <script>
+       <!--This script will check to see how far the user has scrolled down the page and when it has reached a certain length the script will run and then display the button to take the user back to the top of the page -->
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("topBtn").style.display = "block";
+        } else {
+          document.getElementById("topBtn").style.display = "none";
+        }
+      }
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    <div class="container">
+      <h1>Welcome to MTG Fire</h1>
+      <p>
+        Hello and welcome to MTG Fire. If your brand new to the game or looking
+        to polish up on your skills this is the place to be. We have the top
+        players around the world and they are here to demonstrate all their tips
+        and tricks.
+      </p>
+      <p>
+        Here at MTG Fire our aim is to bring the community together as one
+        bringing players of all skill levels and to teach and learn from each
+        other. We have from beginner videos to more skilled and competitive
+        play.
+      </p>
+      <div class="row">
+        <div class="column">
+          <!-- The column tag will make the images sit side by side eachother and with the 33% width will leave just a small gap between them all -->
+          <img src="images/pro1.jpg" alt="logo" style="width: 100%;" />
+        </div>
+        <div class="column">
+          <img src="images/pro2.jpg" alt="logo" style="width: 100%;" />
+        </div>
+        <div class="column">
+          <img src="images/pro3.jpg" alt="logo" style="width: 100%;" />
+        </div>
+      </div>
+      <p>
+        Above are some of our top players. You'll be seeing plenty of these guys
+        in our advanced videos that can be found
+        <a href="advanced.html">Here.</a>
+      </p>
+      <p></p>
+    </div>
+    <div class="footer">
+      &copy;MTG Fire
+      <!-- the &copy will give the MTG fire a copyright symbol -->
+    </div>
+  </body>
+</html>

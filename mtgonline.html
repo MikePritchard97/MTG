@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="images/favicon.png">
+</head>
+<header>
+<meta charset="utf-8">
+<title> MTG Online </title> <!-- This determines this title of the page -->
+<nav>
+<ul>
+  <li><a href="index.html">Home</a></li>  <!-- The active shows the user what page they are currently on by making the page tag red-->
+  <li><a href="basics.html">Basics</a></li> <!-- This shows what button is linked to which html page -->
+  <li><a href="advanced.html">Advanced</a></li>
+  <li><a class="active" href="mtgonline.html">MTG Online</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <img class="logo" src="images/flame.jpeg" alt="logo">
+</ul>
+</nav>
+</header>
+<body>
+  <button onclick="topFunction()" id="topBtn" title="top">Top</button>
+<script> <!--This script will check to see how far the user has scrolled down the page and when it has reached a certain length the script will run and then display the button to take the user back to the top of the page -->
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("topBtn").style.display = "block";
+  } else {
+    document.getElementById("topBtn").style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<h1>Why not try MTG Online?</h1>
+<p class="intro">Don't have time to make it to a store to play? Why not play Magic Online.
+It's free to play and can be a good way for every type of player to improve their
+game play.</p>
+<div class="function"> <!-- This is a button that redirects the user to a different website -->
+  <a href="https://magic.wizards.com/en/mtgarena" class="button" role="button">Download Now</a>
+</div>
+<h2>Here are a few of our favourite streamers</h2>
+<p class="intro">Here is our first player The Darkpreacher:</p>
+  <a class="streamer" href="https://www.twitch.tv/the_darkpreacher">
+  <img src="images/streamer1.jpg" alt="TDP"> <!-- This is a image which is also a link and the image also has a tag name -->
+</a>
+<p class="intro">The master of red unrealz_tv:</p>
+
+<a class="streamer2" href="https://www.twitch.tv/unrealz_tv">
+<img src="images/streamer2.jpg" alt="Urtv"
+style="width:615px;height:315px;border:0;"></a>
+<p></p>
+<p class="intro">The control king Hogmanlolz:</p>
+
+<a class="streamer2" href="https://www.twitch.tv/hogmanlolz">
+<img src="images/streamer3.jpg" alt="Hotman"
+style="width:615px;height:315px;border:0;"></a>
+<p></p>
+<div  class="footer"> <!-- the &copy will give the MTG fire a copyright symbol -->
+&copy;MTG Fire
+</div>
+
+</body>
+</html>
